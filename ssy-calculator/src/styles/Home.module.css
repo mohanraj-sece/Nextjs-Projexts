@@ -60,8 +60,8 @@
 
 .inputContainer {
   padding:1rem 0.5rem 1rem 1rem;
-  width:50%;
-  height:100%;
+  width:30rem;
+  height:100%; 
   display:flex;
   flex-direction: column;
   background-color: rgba(255,255,255,0.2);
@@ -72,7 +72,7 @@
   flex-direction: column;
   text-align: left;
   justify-content: left;
-  padding:1rem;
+  padding:0.5rem;
   color:#1B1C20;
 }
 
@@ -88,26 +88,6 @@
   color:#161415;
 }
 
-.rate{
-  margin:2rem 1rem 1rem 1rem;
-  display:flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.rateseparate{
-  margin-left: 2rem;
-  width:10rem;
-  height:2.5rem;
-  text-align: center;
-  color:#161415;
-  padding:0.15rem;
-  border-radius: 50px;
-  border:0.1rem solid #9BB0D3;
-  background-color: #dbe8fd;
-  box-shadow: 0px 3px 5px #505C6227;
-}
-
 
 .slider input[type="range"]{
   -webkit-appearance: none;
@@ -121,7 +101,6 @@
 }
 
 .range::-webkit-slider-thumb{
-  
   width:23px;
   height:23px;
   border-radius:50%;
@@ -146,7 +125,6 @@
   border-radius: 15px;
 }
 
-
 .range::-ms-thumb {
   width:15px;
   height:15px;
@@ -169,6 +147,38 @@
   box-shadow: 0px 3px 5px #505C6227;
 }
 
+.rate{
+  margin:2rem 0.5rem 1rem 1rem;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.rateseparate{
+  margin-left: 2rem;
+  width:10rem;
+  height:2.5rem;
+  text-align: center;
+  color:#161415;
+  padding:0.15rem;
+  border-radius: 50px;
+  border:0.1rem solid #9BB0D3;
+  background-color: #dbe8fd;
+  box-shadow: 0px 3px 5px #505C6227;
+}
+
+.dashedBtn{
+  cursor: pointer;
+  margin-top: 3rem;
+  border: 0.19rem dashed #36b366;
+  align-self: center;
+  width:60%;
+  outline: none;
+  border-radius: 35px;
+  padding: 0.2rem;
+  margin-bottom: 1rem;
+}
+
 .btn{
   justify-content: center;
   cursor: pointer;
@@ -185,33 +195,22 @@
   box-shadow: 1px 10px 20px 10px #191a1b27;
 }
 
-.dashedBtn{
-  cursor: pointer;
-  margin-left: 6rem;
-  margin-top: 3rem;
-  border: 0.19rem dashed #36b366;
-  width:60%;
-  outline: none;
-  border-radius: 35px;
-  padding: 0.2rem;
-  margin-bottom: 1rem;
-}
 
 .verticalline{
   position: relative;
   margin-top: 0.7rem;
   margin-right:1rem;
   margin-bottom: 0.7rem;
-  height:26rem;
-  width:0.3rem;
+  height:95%;
+  width:0.15rem;
   border-radius: 50px;
-  background-color: #dfd4d9;
+  background-color: #9d9b9c;
 }
 
 .graphContainer{
   display: flex;
   flex-direction: column;
-  width:100%;
+  width:30rem;
   height:100%;
   background-color: rgba(255,255,255,0.3);
 }
@@ -271,9 +270,9 @@
 }
 
 .chartOutput{
+  position: relative;
   display: flex;
   justify-content: space-between;
-
 }
 
 .tooltip{
@@ -352,8 +351,6 @@
   display: flex;
   flex-direction: column;
   background-color: rgba(255,255,255,0.2);
-  width:100%;
-  height:100%;
 }
 
 .otherCalculatorContainer{
@@ -369,23 +366,108 @@
   display: flex;
   flex-direction: row;
   overflow: scroll;
+  overflow-y: auto;
+  overflow-x: auto;
 }
 
 .nameContainer{
   position: relative;
   margin:2rem 1rem 2rem 1rem;
   text-align: center;
-  padding: 1rem;
+  padding: 0.3rem;
   border-radius: 15px;
   border:3px solid rgba(255,255,255,1);
   box-shadow: 0px 3px 5px #505C6227,inset 0px 4px 5px 1px #69757b27;
   background-color: rgba(255,255,255,0.2);
   width:10rem;
-  height:3.5rem;
+  height:3.8rem;
 }
 
 .greenText{
   color:#00D382;
   text-align: center;
   font-size: 18px;
+}
+
+@media only screen and (max-width: 750px) {
+  .main {
+    padding: 1rem;
+  }
+
+  .calculatorContainer{
+    display:flex;
+    flex-direction: column;
+    margin-top:1rem;
+  }
+
+  .container{
+    margin:1rem 0.5rem 1rem 0.5rem;
+    padding: 0.1rem;
+    display: flex;
+    flex-direction: column;
+    height:100%;
+  }
+
+  .inputContainer {
+    width:100%;
+    text-align: left;
+  }
+
+  .field{
+    padding:0.5rem;
+  }
+
+  .inputVal{
+    margin-left: 1rem;
+    width:15rem;
+    padding:0.15rem;
+  }
+
+  .rate{
+    margin:2rem 0.5rem 1rem 0.5rem;
+  }
+  
+  .dashedBtn{
+    margin-top: 1rem;
+    border: 0.1rem dashed #36b366;
+    width:75%;
+  }
+  
+  .btn{
+    padding:0.5rem;
+  }
+
+  .chart{
+    height:5rem;
+    width:60%;
+  }
+
+  .chartOutput{
+    width:60%;
+  }
+
+  .verticalline{
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+    margin-left:1rem;
+    margin-right: 1rem;
+    height:0.15rem;
+    width:93%;
+  }
+
+  .toggle{
+    margin-left:1rem;
+  }
+
+
+  .tooltip{
+    margin:1rem 0.5rem 1rem 0.5rem;
+    padding: 0.5rem;
+    max-height: 30rem;
+  }
+
+  .faq{
+    margin:1rem 0.5rem 1rem 0.5rem;
+    padding: 0.5rem;
+  }
 }

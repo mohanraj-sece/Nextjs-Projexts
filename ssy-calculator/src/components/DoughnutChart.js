@@ -5,7 +5,8 @@ import HighchartsReact from 'highcharts-react-official';
 const option={
   chart: {
     type: 'pie',
-    backgroundColor:'transparent'
+    backgroundColor:'transparent',
+    borderRadius: 50
   },
   title: {
     text:"",
