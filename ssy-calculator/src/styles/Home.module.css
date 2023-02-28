@@ -1,0 +1,357 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5.5rem;
+  min-height: 100vh;
+  position:relative;
+  width:100%;
+  color: #464143;
+  background-color: rgba(255,255,255,0.2);
+}
+
+.image{
+  width:100%;
+  height:100%;
+  display: block;
+  position: fixed;
+}
+
+.headline{
+  color:#1B1C20;
+  font-size:medium;
+  text-align: center;
+}
+
+.subheading{
+  color:#161415;
+  text-align: center;
+  margin-top: 1rem;
+  font-size:larger;
+}
+
+.bluecolor{
+  color:#0161FF;
+}
+
+.calculatorContainer{
+  position: relative;
+  display:flex;
+  flex-direction: row;
+  margin-top:1rem;
+  width:100%;
+  height:100%;
+}
+
+.container{
+  position: relative;
+  margin:2rem 1rem 2rem 1rem;
+  text-align: center;
+  padding: 0.2rem;
+  border-radius: 30px;
+  border:3px solid rgba(255,255,255,1);
+  box-shadow: 0px 3px 5px #505C6227,inset 0px 2.5px 5px 1px #69757b27;
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(255,255,255,0.2);
+  height: 30rem;
+}
+
+.inputContainer {
+  padding:1rem 0.5rem 1rem 1rem;
+  width:50%;
+  height:100%;
+  display:flex;
+  flex-direction: column;
+  background-color: rgba(255,255,255,0.2);
+}
+
+.field{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: left;
+  padding:1rem;
+  color:#1B1C20;
+}
+
+.slider{
+  margin-top:0.7rem;
+  display:flex;
+  flex-direction: row;
+}
+
+.headName{
+  font-size: 20px;
+  font-weight: 600;
+  color:#161415;
+}
+
+.rate{
+  margin:2rem 1rem 1rem 1rem;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.rateseparate{
+  margin-left: 2rem;
+  width:10rem;
+  height:2.5rem;
+  text-align: center;
+  color:#161415;
+  padding:0.15rem;
+  border-radius: 50px;
+  border:0.1rem solid #9BB0D3;
+  background-color: #dbe8fd;
+  box-shadow: 0px 3px 5px #505C6227;
+}
+
+
+.slider input[type="range"]{
+  -webkit-appearance: none;
+  margin-top:1rem;
+  width:300px;
+  height:10px;
+  background:#01241127;
+  border-radius:15px;
+  overflow: none;
+  outline: none;
+}
+
+.range::-webkit-slider-thumb{
+  
+  width:23px;
+  height:23px;
+  border-radius:50%;
+  cursor:pointer;
+  background-color:rgb(241, 235, 235);
+  border:5px solid #00D382;
+} 
+
+
+.range::-moz-range-thumb {
+  width:15px;
+  height:15px;
+  border-radius:50%;
+  cursor:pointer;
+  background-color:rgb(241, 235, 235);
+  border:3.5px solid #00D382;
+}
+
+.range::-moz-range-progress{
+  background-color: #00D382;
+  height:10px;
+  border-radius: 15px;
+}
+
+
+.range::-ms-thumb {
+  width:15px;
+  height:15px;
+  border-radius:50%;
+  cursor:pointer;
+  background-color:rgb(241, 235, 235);
+  border:3.5px solid #00D382;
+} 
+
+.inputVal{
+  margin-left: 2rem;
+  width:12rem;
+  height:2.4rem;
+  text-align: center;
+  color:#161415;
+  padding:0.15rem;
+  border-radius: 50px;
+  border:0.1rem solid #9BB0D3;
+  background-color: #dbe8fd;
+  box-shadow: 0px 3px 5px #505C6227;
+}
+
+.btn{
+  justify-content: center;
+  cursor: pointer;
+  background: #00D382;
+  border:none;
+  border-radius: 35px;
+  color:white;
+  width: 100%;
+  padding: 0.6rem;
+  text-align: center;
+  outline: none;
+  font-weight: bold;
+  font-size: 22px;
+  box-shadow: 1px 10px 20px 10px #191a1b27;
+}
+
+.dashedBtn{
+  cursor: pointer;
+  margin-left: 6rem;
+  margin-top: 3rem;
+  border: 0.19rem dashed #36b366;
+  width:60%;
+  outline: none;
+  border-radius: 35px;
+  padding: 0.2rem;
+  margin-bottom: 1rem;
+}
+
+.verticalline{
+  position: relative;
+  margin-top: 0.7rem;
+  margin-right:1rem;
+  margin-bottom: 0.7rem;
+  height:26rem;
+  width:0.3rem;
+  border-radius: 50px;
+  background-color: #dfd4d9;
+}
+
+.graphContainer{
+  display: flex;
+  flex-direction: column;
+  width:100%;
+  height:100%;
+  background-color: rgba(255,255,255,0.3);
+}
+
+.toggle{
+  margin-top:1rem;
+  position:absolute;
+  display: flex;
+  justify-content: space-between;
+  z-index:1;
+  width:4rem;
+  height:2rem;
+  border-radius: 50px;
+  padding:0.2rem;
+  outline:none;
+  border:2px solid rgba(255,255,255,1);
+  background-color:#00000029;
+  box-shadow: 0px 3px 5px  #505C6227,inset 0px 4px 5px 1px #69757b27;;
+  align-items: center;
+}
+
+.icon1{
+  width: 1.5rem;
+  height:1.5rem;
+  align-content: center;
+  border-radius: 50px;
+  outline:none;
+  border: none;
+  color:#464143;
+  background: transparent;
+}
+
+.icon2{
+  align-content: center;
+  width:1.5rem;
+  height:1.5rem;
+  border-radius: 50px;
+  outline:none;
+  border: none;
+  color:white;
+  background-color: #0161FF;
+  border:2px solid rgba(255,255,255,1);
+}
+
+.chart{
+  position: relative;
+  height:10rem;
+  width:25rem;
+  border-radius: 50px;
+}
+
+.chartAnswer{
+  position: relative;
+  margin-top: 11rem;
+  text-align: left;
+  padding:1rem;
+}
+
+.chartOutput{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.tooltip{
+  position: relative;
+  margin:2rem 0rem 2rem 0.7rem;
+  text-align: center;
+  padding: 0.2rem;
+  border-radius: 30px;
+  border:3px solid rgba(255,255,255,1);
+  box-shadow: 0px 3px 5px #505C6227,inset 0px 2.5px 5px 1px #69757b27;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255,255,255,0.3);
+  max-height: 30rem;
+  overflow: scroll;
+  overflow-x: auto;
+  overflow-y: auto;
+}
+
+
+.toolHeadName{
+  margin-top:1rem;
+  margin-bottom: 0.5rem;
+}
+
+.questionBoxtrue{
+  color:#161415;
+  margin: 0.7rem 0.7rem 0rem 0.7rem;
+  padding-bottom: 0.3rem;
+}
+
+.questionBoxfalse{
+  color:#161415;
+  margin: 0.7rem 0.7rem 0rem 0.7rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 2px solid #d9d6d6;
+}
+
+.question{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.qname{
+  color:#161415;
+  font-size:18px;
+  font-weight: 600;
+  text-align: left;
+}
+
+.icon{
+  margin-top:0.3rem;
+  margin-left:0.5rem;
+  color:#0161FF;
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+
+.answer{
+  text-align: left;
+  margin:0.5rem 0 0rem 0;
+  font-weight: 450;
+  font-size:18px;
+}
+
+.faq{
+  position: relative;
+  margin:2rem 1rem 2rem 1rem;
+  text-align: center;
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  border-radius: 30px;
+  border:3px solid rgba(255,255,255,1);
+  box-shadow: 0px 3px 5px #505C6227,inset 0px 4px 5px 1px #69757b27;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255,255,255,0.2);
+  width:100%;
+  height:100%;
+}
