@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  align-items: left;
   padding: 5.5rem;
   min-height: 100vh;
   position:relative;
@@ -336,7 +336,7 @@
 
 .answer{
   text-align: left;
-  margin:0.5rem 0 0rem 0;
+  margin:0.5rem 0 0.8rem 0;
   font-weight: 450;
   font-size:18px;
 }
@@ -354,4 +354,38 @@
   background-color: rgba(255,255,255,0.2);
   width:100%;
   height:100%;
+}
+
+.otherCalculatorContainer{
+  justify-content: left;
+  margin-left:1rem;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+
+}
+
+.otherCalculatorNames{
+  display: flex;
+  flex-direction: row;
+  overflow: scroll;
+}
+
+.nameContainer{
+  position: relative;
+  margin:2rem 1rem 2rem 1rem;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 15px;
+  border:3px solid rgba(255,255,255,1);
+  box-shadow: 0px 3px 5px #505C6227,inset 0px 4px 5px 1px #69757b27;
+  background-color: rgba(255,255,255,0.2);
+  width:10rem;
+  height:3.5rem;
+}
+
+.greenText{
+  color:#00D382;
+  text-align: center;
+  font-size: 18px;
 }

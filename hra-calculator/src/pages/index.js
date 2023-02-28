@@ -15,8 +15,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
        
       </Head>
-      <main className={styles.main}>
-      <h1 className="text-4xl font-bold underline bg-sky-500 hover:bg-sky-700">
+      <main>
+      <h1 className="bg-sky-500 hover:bg-sky-700">
     Hello world!
   </h1>
       </main>

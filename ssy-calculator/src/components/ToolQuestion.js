@@ -5,7 +5,6 @@ import styles from '../styles/Home.module.css';
 
 export default function ToolQuestion({name, answer, last}) {
   const [check,setCheck]=useState(false);
-  const text= answer.split('\n').map ((item, i) => (<><p key={i}>{item}</p><br/> </>));
   return (
     <div className={last?styles.questionBoxtrue:styles.questionBoxfalse}>
       
@@ -21,7 +20,7 @@ export default function ToolQuestion({name, answer, last}) {
       </div>
 
       <div className={styles.answer}>
-              {check? <p >{text}</p>: ''}
+              {check? <p >{answer}</p>: ''}
       </div>
         
     </div>
