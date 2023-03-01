@@ -52,7 +52,17 @@ export default function Home() {
             <h3 className={styles.toolHeadName}>How to use this calculator?</h3>
 
             <ToolQuestion name={'Sukanya Samriddhi Yojana'} answer={'Sukanya Samriddhi Yojana (SSY) is a government-sponsored savings scheme in India for the girl child. It is a long-term investment option that offers attractive interest rates and tax benefits.'} />
-            <ToolQuestion name="Historical interest rates" answer={"Financial Year Interest Rate \n 2014-15  9.1% \n 2015-16  9.2% \n 2016-17  8.6% \n 2016-17  8.5%"} />
+            <ToolQuestion name="Historical interest rates" answer={<><table><tr><th>Financial Year</th><th>Interest Rate</th></tr>
+            <tr><td>2014-15</td><td>9.1%</td></tr>
+            <tr><td>2015-16</td><td>9.2%</td></tr>
+            <tr><td>2016-17</td><td>8.6%%</td></tr>
+            <tr><td>2016-17</td><td>8.5%</td></tr>
+            <tr><td>2017-18</td><td>8.4%</td></tr>
+            <tr><td>2017-18</td><td>8.3%</td></tr>
+            <tr><td>2017-18</td><td>8.1%</td></tr>
+            <tr><td>2018-19</td><td>8.1%</td></tr>
+
+            </table></>} />
             <ToolQuestion name="Maturity value of the investment" answer="The returns depend on the invested amount and current interest rates offered.Use the calculator to get an accurate maturity value." />
             <ToolQuestion name="Maturity year" answer="SSY deposit matures at age 22 of the girl child."  last={true}/>
         </div>

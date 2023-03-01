@@ -292,6 +292,23 @@
   overflow-y: auto;
 }
 
+.answer table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.answer td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+.answer th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
 
 .toolHeadName{
   margin-top:1rem;
